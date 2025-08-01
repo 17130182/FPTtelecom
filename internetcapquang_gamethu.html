@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>FPT Telecom</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <!--  <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+<!-- Thêm CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <style>
+            ul, li {
+              list-style: none;
+          }
+          body {
+             body {
+              font-family: 'Roboto', 'Arial', sans-serif;
+          }
+              /*font-family: 'Roboto', sans-serif;
+              background-color: #f2f2f2;
+              margin: 0;
+              padding: 0;
+*/
+      }
+
+
+
+      .form-container {
+          background: #fff;
+          max-width: 500px;
+          margin: 60px auto;
+          padding: 30px 40px;
+          border-radius: 12px;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+          text-align: center;
+          color: #e74c3c;
+          margin-bottom: 25px;
+      }
+
+      label {
+          font-weight: 600;
+          display: block;
+          margin: 12px 0 6px;
+          color: #FFFFFF;
+      }
+
+      input, select, textarea {
+          width: 100%;
+          padding: 10px 12px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          font-size: 15px;
+          transition: border-color 0.3s ease;
+      }
+
+      input:focus, select:focus, textarea:focus {
+          border-color: #e67e22;
+          outline: none;
+      }
+
+      button {
+          width: 100%;
+          padding: 12px;
+          background: #e74c3c;
+          border: none;
+          border-radius: 8px;
+          color: #fff;
+          font-size: 16px;
+          font-weight: bold;
+          margin-top: 20px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+      }
+
+      button:hover {
+          background: #c0392b;
+      }
+
+      #result {
+          margin-top: 15px;
+          text-align: center;
+          color: green;
+          font-weight: 600;
+      }
+
+      @media (max-width: 600px) {
+          .form-container {
+            margin: 30px 15px;
+            padding: 20px;
+        }
+    }
+list-unstyled{
+    font-size: 20px;
+    .pa
+}
+.package-card ul li {
+    font-size: 13px;           /* giảm từ ~15px còn 13px */
+    line-height: 1.5;          /* khoảng cách dòng vừa phải */
+    margin-bottom: 4px;
+}
+.package-card .btn {
+    font-size: 14px;           /* nút đăng ký giữ rõ ràng */
+    font-weight: bold;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;              /* co giãn theo màn hình */
+    height: auto;             /* giữ tỉ lệ khung hình */
+    display: block;           /* bỏ khoảng trắng dưới ảnh */
+    object-fit: cover;        /* cắt ảnh đẹp nếu cần */
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 0;
+    background-color: #eef3ff;
+    flex-wrap: wrap;
+}
+
+.tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #444;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-item i {
+    font-size: 28px;
+    color: #3874f3;
+    margin-bottom: 8px;
+}
+
+.tab-item.active {
+    border-bottom: 3px solid #3874f3;
+    color: #3874f3;
+}
+
+
+/*.swiper {
+    padding: 20px 0;
+}
+.swiper-slide {
+    width: 300px !important;
+}
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.package-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  padding: 10px;
+}*/
+
+
+.swiper-slide {
+      height: auto;
+    }
+    .package-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+      background: #fff;
+    }
+    .package-card:hover {
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    .package-image {
+      background: #f5f5f5;
+      padding: 15px;
+    }
+    .package-body {
+      padding: 20px;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .btn-register {
+      background: #005bea;
+      color: #fff;
+      border: none;
+    }
+    .btn-register:hover {
+      background: #0041b3;
+    }
+/*MENU*/
+
+/* Giảm cỡ chữ và padding của menu chính */
+.navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 10px 12px;
+}
+
+/* Giảm chiều cao navbar */
+.navbar {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+/* Logo nhỏ hơn */
+.navbar-brand img.logo {
+    height: 36px;
+}
+
+/* Menu con cũng nhỏ lại */
+.dropdown-menu li a {
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+    <!-- Start Main Top -->
+
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Sản phẩm dịch vụ</a>
+                            <ul style="list-style: none;" class="dropdown-menu">
+                                <li><a href="internetcapquang_canhan.html">Internet cáp quang</a></li>
+                                <li><a href="truyenhinhFPTplay.html">Truyền hình & Giải trí</a></li>
+                                <li><a href="camera.html">Camera FPT</a></li>
+                                <li><a href="smarthome.html">FPT Smart Home</a></li>
+                                <li><a href="#">Dịch vụ tiện ích</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="sale.html">Ưu đãi</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Hỗ trợ</a>
+                            <ul style="list-style: none;" class="dropdown-menu">
+                                <li><a href="#">Hỗ trợ thông tin</a></li>
+                                <li><a href="#">Hỗ trợ kĩ thuật</a></li>
+                                
+                                
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="contact-us.html">Hỗ trợ</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="about.html">Về chúng tôi</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Start Atribute Navigation -->
+               <!--  <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li class="side-menu">
+							<a href="#">
+								<i class="fa fa-shopping-bag"></i>
+								<span class="badge">3</span>
+								<p>My Cart</p>
+							</a>
+						</li>
+                    </ul>
+                </div> -->
+                <!-- End Atribute Navigation -->
+            </div>
+            <!-- Start Side Menu -->
+            <!-- <div class="side">
+                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                <li class="cart-box">
+                    <ul class="cart-list">
+                        <li>
+                            <a href="#" class="photo"><img src="images/img-pro-01.jpg" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Delica omtantur </a></h6>
+                            <p>1x - <span class="price">$80.00</span></p>
+                        </li>
+                        <li>
+                            <a href="#" class="photo"><img src="images/img-pro-02.jpg" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Omnes ocurreret</a></h6>
+                            <p>1x - <span class="price">$60.00</span></p>
+                        </li>
+                        <li>
+                            <a href="#" class="photo"><img src="images/img-pro-03.jpg" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Agam facilisis</a></h6>
+                            <p>1x - <span class="price">$40.00</span></p>
+                        </li>
+                        <li class="total">
+                            <a href="#" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
+                            <span class="float-right"><strong>Total</strong>: $180.00</span>
+                        </li>
+                    </ul>
+                </li>
+            </div> -->
+            <!-- End Side Menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+
+
+    <!-- Start Slider -->
+    <div class="banner" >
+       <img  src="images/banner/net_gamer.png" alt="net gamer">
+    </div>
+    <!-- End Slider -->
+
+
+    <div class="tab-container">
+  <div class="tab-item">
+    <i class="fas fa-user"></i>
+    <a href="internetcapquang_canhan.html"><span>Internet cá nhân</span></a>
+  </div>
+  <div class="tab-item">
+    <i class="fas fa-home"></i>
+    <a href="internetcapquang_giadinh.html"><span>Internet gia đình</span></a>
+  </div>
+  <div class="tab-item active">
+    <i class="fas fa-gamepad"></i>
+    <a href="internetcapquang_gamethu.html"><span>Internet game thủ</span></a>
+  </div>
+  <div class="tab-item">
+    <i class="fas fa-briefcase"></i>
+    <a href="internetcapquang_doanhnghiep.html"><span>Internet doanh nghiệp</span></a>
+  </div>
+</div>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-danger">Internet WiFi 6 tốc độ cao cấu hình riêng cho game thủ</h2>
+        <p class="text-muted">Mang đến trải nghiệm game mượt mà, ổn định, giảm thiểu ping trong mọi thể loại game</p>
+    </div>
+
+    <!-- Carousel Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <!-- GÓI 1 -->
+            <div class="swiper-slide">
+                
+                <div class="border rounded p-3 shadow-sm d-flex flex-column h-100 package-card">
+                    <img src="images/game/fgame.jpg" class="img-fluid mb-3" alt="FGame">
+                    <h5><strong>FGame</strong></h5>
+                     <p class="text-primary text-center mb-2"><strong>Chỉ từ&nbsp;<span class="price">230.000đ/tháng</span> </strong></p>
+                    <ul class="list-unstyled text-start small">
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Trang bị Modem Wi-Fi 6</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Tốc độ Download lên đến 1 Gbps</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Tích hợp Ultra Fast hỗ trợ hơn 50+ tựa game</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Giảm độ trễ tới 16ms</li>
+                    </ul>
+                    <a href="tuvanlapdat.html" class="btn btn-danger mt-auto w-100">Đăng ký</a>
+                </div>
+           
+            </div>
+
+            <!-- GÓI 2 -->
+            <div class="swiper-slide">
+                
+                <div class="border rounded p-3 shadow-sm d-flex flex-column h-100 package-card text-center">
+                    <img src="images/game/combofgame.jpg" class="img-fluid mb-3" alt="combo Fgame">
+                    <h5><strong>Combo FGame</strong></h5>
+                    <p class="text-primary text-center mb-2"><strong>Chỉ từ&nbsp;<span class="price">275.000đ/tháng</span> </strong></p>
+                    <ul class="list-unstyled text-start small">
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Modem Wi-Fi 6 </li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Tốc độ Download lên đến 1 Gbps</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>130+ kênh truyền hình giải trí</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Tích hợp Ultra Fast hỗ trợ hơn 50+ tựa game</li>
+                    </ul>
+                    <a href="tuvanlapdat.html" class="btn btn-danger mt-auto w-100">Đăng ký</a>
+                </div>
+           
+            </div>
+
+            <!-- GÓI 3 -->
+            <div class="swiper-slide">
+                
+                <div class="border rounded p-3 shadow-sm d-flex flex-column h-100 package-card text-center">
+                    <img src="images/game/meta.jpg" class="img-fluid mb-3" alt="Meta">
+                    <h5><strong>Internet Meta</strong></h5>
+                    <p class="text-primary text-center mb-2"><strong>Chỉ từ&nbsp;<span class="price">295.000đ/tháng</span> </strong></p>
+                    <ul class="list-unstyled text-start small">
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Modem Wi-Fi 6</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Tốc độ lên đến 1 Gbps</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Phù hợp cho ≥12 thiết bị kết nối</li>
+                    </ul>
+                    <a href="tuvanlapdat.html" class="btn btn-danger mt-auto w-100">Đăng ký</a>
+                </div>
+           
+            </div>
+
+            <!-- GÓI 4 -->
+            <div class="swiper-slide">
+                
+                <div class="border rounded p-3 shadow-sm d-flex flex-column h-100 package-card text-center">
+                    <img src="images/section3/combolux500.jpg" class="img-fluid mb-3" alt="Combo Meta">
+                    <h5><strong>Combo Meta</strong></h5>
+                    <p class="text-primary text-center mb-2"><strong>Chỉ từ&nbsp;<span class="price">315.000đ/tháng</span> </strong></p>
+                    <ul class="list-unstyled text-start small">
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Modem Wi-Fi 6 & FPT Play Box</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Tốc độ lên đến 1 Gbps</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>130+ kênh truyền hình giải trí</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Phù hợp cho ≥12 thiết bị kết nối</li>
+                    </ul>
+                    <a href="tuvanlapdat" class="btn btn-danger mt-auto w-100">Đăng ký</a>
+                
+            </div>
+            </div>
+
+            <!-- Gói 5 -->
+           <!--  <div class="swiper-slide">
+                
+                <div class="border rounded p-3 shadow-sm d-flex flex-column h-100 package-card text-center">
+                    <img src="images/section3/combolux500.jpg" class="img-fluid mb-3" alt="Combo Lux500">
+                    <h5><strong>Combo Lux500</strong></h5>
+                    <ul class="list-unstyled text-start small">
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Wi-Fi 6 + Truyền hình 130+ kênh</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Tốc độ 500 Mbps</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Mở rộng vùng phủ 15~23%</li>
+                    </ul>
+                    <a href="#" class="btn btn-danger mt-auto w-100">Đăng ký</a>
+                
+            </div>
+            </div> -->
+             <!-- Gói 6 -->
+            <!--  <div class="swiper-slide">
+                
+                <div class="border rounded p-3 shadow-sm d-flex flex-column h-100 package-card text-center">
+                    <img src="images/section3/combolux500.jpg" class="img-fluid mb-3" alt="Combo Lux500">
+                    <h5><strong>Combo Lux500</strong></h5>
+                    <ul class="list-unstyled text-start small">
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Wi-Fi 6 + Truyền hình 130+ kênh</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Tốc độ 500 Mbps</li>
+                        <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle text-success me-2"></i>Mở rộng vùng phủ 15~23%</li>
+                    </ul>
+                    <a href="#" class="btn btn-danger mt-auto w-100">Đăng ký</a>
+               
+            </div>
+            </div> -->
+
+        </div>
+
+        <!-- Nút điều hướng -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Start Footer  -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="footer-top-box">
+                     <h3>Giờ mở cửa</h3>
+                     <ul class="list-time">
+                        <li>Thứ 2 - Thứ 7: Cả ngày</li>  
+                        <li>Chủ nhật: Cả ngày</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="footer-top-box">
+                 <h3>Đăng ký ngay</h3>
+							
+                            <div class="formRegister">
+                                <form id="registerForm">
+
+                                  <label for="service">Loại dịch vụ</label>
+                                  <select name="service" id="service" required>
+                                    <option value="">-- Chọn dịch vụ --</option>
+                                    <option value="Internet cá nhân">Internet cá nhân</option>
+                                    <option value="Internet cá nhân">Internet gia đình</option>
+                                    <option value="Internet cá nhân">Internet doanh nghiệp</option>
+                                    <option value="Camera">Camera FPT</option>
+                                    <option value="Combo Internet & Camera">Combo Internet & Camera</option>
+                                </select>
+
+                                <label for="name">Họ và tên</label>
+                                <input type="text" name="name" id="name" placeholder="Nguyễn Văn A" required>
+
+                                <label for="phone">Số điện thoại</label>
+                                <input type="tel" name="phone" id="phone" placeholder="09xx xxx xxx" required>
+
+                                <label for="address">Địa chỉ lắp đặt</label>
+                                <textarea name="address" id="address" rows="3" placeholder="Ví dụ: 123 Lê Lợi, Quận 1, TP.HCM" required></textarea>
+
+                                <button type="submit">Gửi đăng ký</button>
+                            </form>
+                            <div id="result"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="footer-top-box">
+                     <h3>Kênh thông tin</h3>
+                     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                     <ul>
+                        <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-widget">
+                    <p>Giấy chứng nhận ĐKDN số 0101778163 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp  ngày 28/07/2005<p>
+                        <p>Giấy phép cung cấp dịch vụ viễn thông số 255/GP-CVT do Cục Viễn Thông cấp ngày 07/11/2022</p>
+                        <p>Người đại diện: Ông Hoàng Việt Anh</p>                   
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link">
+                        <h4>Về chúng tôi</h4>
+                        <ul>
+                            <li> <a href="#">Giới thiệu chung</a></li>
+                            <li><a href="#">Liên kết và thành viên</a></li>
+                            <li><a href="#">Khách hàng & Đối tác</a></li>
+                            <li><a href="#">Quan hệ cổ đông</a></li>
+                            <li><a href="#">Tập đoàn FPT</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link-contact">
+                        <h4>Công ty Cổ Phần FPT Telecom</h4>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Địa chỉ:Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10 Phạm Văn Bạch, quận Cầu Giấy, TP. Hà Nội </p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-square"></i>Điện thoại: 024 7300 2222 <a href="tel:+1-888705770"></a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">hotrokhachhang@fpt.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer  -->
+
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none; margin-top: 20 px">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        576: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1200: { slidesPerView: 4 }
+    }
+});
+</script>
+</body>
+
+</html>

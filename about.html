@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>FPT Telecom</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <!--  <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+<!-- Thêm CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <style>
+            ul, li {
+              list-style: none;
+          }
+          body {
+             body {
+              font-family: 'Roboto', 'Arial', sans-serif;
+          }
+              /*font-family: 'Roboto', sans-serif;
+              background-color: #f2f2f2;
+              margin: 0;
+              padding: 0;
+*/
+      }
+
+
+
+      .form-container {
+          background: #fff;
+          max-width: 500px;
+          margin: 60px auto;
+          padding: 30px 40px;
+          border-radius: 12px;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+          text-align: center;
+          color: #e74c3c;
+          margin-bottom: 25px;
+      }
+
+      label {
+          font-weight: 600;
+          display: block;
+          margin: 12px 0 6px;
+          color: #FFFFFF;
+      }
+
+      input, select, textarea {
+          width: 100%;
+          padding: 10px 12px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          font-size: 15px;
+          transition: border-color 0.3s ease;
+      }
+
+      input:focus, select:focus, textarea:focus {
+          border-color: #e67e22;
+          outline: none;
+      }
+
+      button {
+          width: 100%;
+          padding: 12px;
+          background: #e74c3c;
+          border: none;
+          border-radius: 8px;
+          color: #fff;
+          font-size: 16px;
+          font-weight: bold;
+          margin-top: 20px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+      }
+
+      button:hover {
+          background: #c0392b;
+      }
+
+      #result {
+          margin-top: 15px;
+          text-align: center;
+          color: green;
+          font-weight: 600;
+      }
+
+      @media (max-width: 600px) {
+          .form-container {
+            margin: 30px 15px;
+            padding: 20px;
+        }
+    }
+    list-unstyled{
+        font-size: 20px;
+        .pa
+    }
+    .package-card ul li {
+        font-size: 13px;           /* giảm từ ~15px còn 13px */
+        line-height: 1.5;          /* khoảng cách dòng vừa phải */
+        margin-bottom: 4px;
+    }
+    .package-card .btn {
+        font-size: 14px;           /* nút đăng ký giữ rõ ràng */
+        font-weight: bold;
+    }
+
+/*MENU*/
+
+/* Giảm cỡ chữ và padding của menu chính */
+.navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 10px 12px;
+}
+
+/* Giảm chiều cao navbar */
+.navbar {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+/* Logo nhỏ hơn */
+.navbar-brand img.logo {
+    height: 36px;
+}
+
+/* Menu con cũng nhỏ lại */
+.dropdown-menu li a {
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+.card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+.card {
+  border-radius: 20px; /* tuỳ bo nhiều ít */
+  overflow: hidden; /* quan trọng */
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.navbar .hotline {
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .navbar .hotline {
+      position: static;
+      transform: none;
+      margin: 10px 0;
+  }
+
+.text-orange {
+  color: #f37021; /* Màu cam thương hiệu FPT */
+}
+
+.about-fpt h2 i {
+  color: #f37021;
+  margin-right: 8px;
+}
+
+.section-title h2 {
+  font-weight: 700;
+}
+
+
+</style>
+
+</head>
+
+<body>
+    <!-- Start Main Top -->
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                    <div class="right-phone-box">
+                        <p>Gọi ngay: <a href="#">035 326 4243</a></p>
+                    </div>
+                    <div class="our-link">
+                        <ul>
+                            <!-- <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li> -->
+                            <li><a href="#"><i class="fas fa-location-arrow"></i>Việt Nam</a></li>
+                            <li><a href="tuvanlapdat.html"><i class="fas fa-headset"></i>Tư vấn ngay</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                    <div class="text-slid-box" style="padding-left: 100px;">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li>
+                                    <i class="fas fa-headset"></i> Tư vấn miễn phí
+                                </li>
+                                <li>
+                                    <i class="fas fa-gear"></i> Miễn phí thiết bị
+                                </li>
+                                <li>
+                                    <i class="fas fa-infinity"></i> Hỗ trợ 24/7 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                    <h1>
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- Số điện thoại ở giữa -->
+                    <div class="hotline text-center mx-auto">
+                        <span class="fw-bold"><strong>Hotline/Zalo: 0353 264 243 - Minh Quang FPT</strong></span>
+                    </div>
+
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Sản phẩm dịch vụ</a>
+                                <ul style="list-style: none;" class="dropdown-menu">
+                                    <li><a href="internetcapquang_canhan.html">Internet cáp quang</a></li>
+                                    <li><a href="truyenhinhFPTplay.html">Truyền hình & Giải trí</a></li>
+                                    <li><a href="camera.html">Camera FPT</a></li>
+                                    <li><a href="#">FPT Smart Home</a></li>
+                                    <li><a href="#">Dịch vụ tiện ích</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="sale.html">Ưu đãi</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Hỗ trợ</a>
+                                <ul style="list-style: none;" class="dropdown-menu">
+                                    <li><a href="#">Hỗ trợ thông tin</a></li>
+                                    <li><a href="#">Hỗ trợ kĩ thuật</a></li>
+
+
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="contact-us.html">Hỗ trợ</a></li> -->
+                            <li class="nav-item active"><a class="nav-link" href="about.html">Về chúng tôi</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            </nav>
+
+        </header>
+        <!-- End Main Top -->
+
+        <!-- Start Top Search -->
+        <div class="top-search">
+            <div class="container">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Search -->
+
+        <!-- Start Slider -->
+        <div id="slides-shop" class="cover-slides">
+            <ul class="slides-container">
+                <li class="text-center">
+                    <img src="images/banner-01.png" alt="">
+
+                </li>
+                <li class="text-center">
+                    <img src="images/banner-02.png" alt="">
+
+                </li>
+                <li class="text-center">
+                    <img src="images/banner-03.png" alt="">
+                </li>
+            </ul>
+            <div class="slides-navigation">
+                <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <!-- End Slider -->
+
+
+
+    </div>
+</div>
+</div>
+</div>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+<section class="about-fpt py-5">
+  <div class="container">
+    <div class="section-title mb-4">
+      <h2><i class="bi bi-info-circle"></i><strong>VỀ TẬP ĐOÀN FPT</strong></h2>
+    </div>
+    <p>
+      Năm 1988, 13 nhà khoa học trẻ thành lập Công ty FPT với mong muốn xây dựng “một tổ chức kiểu mới, giàu mạnh bằng nỗ lực lao động sáng tạo trong khoa học kỹ thuật và công nghệ, làm Khách hàng hài lòng, góp phần hưng thịnh Quốc gia, đem lại cho mỗi thành viên của mình điều kiện phát triển đầy đủ nhất về tài năng và một cuộc sống đầy đủ về vật chất, phong phú về tinh thần.”
+    </p>
+    <p>
+      Không ngừng đổi mới, liên tục sáng tạo và luôn tiên phong mang lại cho Khách hàng các sản phẩm/giải pháp/dịch vụ công nghệ tối ưu nhất, FPT trở thành Công ty CNTT-VT lớn nhất trong khu vực kinh tế tư nhân của Việt Nam với gần 37.180 Cán bộ Nhân viên, trong đó có 24.068 kỹ sư CNTT, lập trình viên, chuyên gia công nghệ; hệ thống 46 chi nhánh, văn phòng tại 27 quốc gia và vùng lãnh thổ bên ngoài Việt Nam. FPT cũng là doanh nghiệp dẫn đầu trong các lĩnh vực: Xuất khẩu phần mềm, Tích hợp hệ thống; Phát triển phần mềm; Dịch vụ CNTT.
+    </p>
+    <p>
+      Trong 34 năm qua, FPT không chỉ tiên phong xây dựng, phát triển các phần mềm thuần hiệu Việt; đưa công nghệ vào cuộc sống; hiện đại hóa các ngành kinh tế xuống công sâu Quốc gia; đẩy mạnh giáo dục & đào tạo thế hệ trẻ theo hướng hội nhập, công nghiệp, mà còn tiên phong trong lĩnh vực xuất khẩu phần mềm, góp phần đưa trí tuệ Việt Nam ra thế giới. Trong nước, hầu hết các hệ thống thông tin lớn trong các cơ quan nhà nước và các ngành kinh tế trọng điểm của Việt Nam đều do FPT xây dựng và phát triển.
+    </p>
+
+    <div class="row text-center my-5">
+      <div class="col-md-2 offset-md-1">
+
+        <h3 class="text-orange fw-bold mb-0"><strong>34</strong></h3>
+        <p class="mb-0">NĂM</p>
+        <small>Thành lập</small>
+      </div>
+      <div class="col-md-2">
+        <h3 class="text-orange fw-bold mb-0"><strong>63</strong></h3>
+        <p class="mb-0">TỈNH THÀNH</p>
+        <small>Phủ khắp</small>
+      </div>
+      <div class="col-md-2">
+        <h3 class="text-orange fw-bold mb-0"><strong>46</strong></h3>
+        <p class="mb-0">CHI NHÁNH, VĂN PHÒNG</p>
+        <small>Ngoài Việt Nam</small>
+      </div>
+      <div class="col-md-2">
+        <h3 class="text-orange fw-bold mb-0"><strong>37.180</strong></h3>
+        <p class="mb-0">NHÂN VIÊN</p>
+        <small>Với</small>
+      </div>
+      <div class="col-md-2">
+        <h3 class="text-orange fw-bold mb-0"><strong>35.657<strong></h3>
+        <p class="mb-0">TỶ VNĐ</p>
+        <small>Doanh thu 2021</small>
+      </div>
+    </div>
+
+    <p>
+      Trong cuộc cách mạng 4.0, FPT là Công ty Việt Nam tiên phong trong việc nghiên cứu và phát triển các công nghệ mới về trí tuệ nhân tạo, dữ liệu lớn, điện toán đám mây, di động,… FPT cũng là doanh nghiệp tiên phong đồng hành cùng với các tập đoàn công nghệ hàng đầu thế giới để tạo nên các nền tảng công nghệ số tiên tiến nhất như GE (Predix), Siemens (MindSphere), Airbus (Skywise), Amazon AWS…
+    </p>
+    <p>
+      Vị thế của FPT trên toàn cầu đã được công nhận và khẳng định thông qua danh sách Khách hàng gồm hơn 700 doanh nghiệp lớn trên thế giới, đặc biệt trong đó có gần 100 Khách hàng nằm trong danh sách Fortune 500. Một số tên tuổi khách hàng có thể kể đến Toshiba, Hitachi, Airbus, Deutsche Bank, Unilever, Panasonic…
+    </p>
+    <p>
+      Với định hướng tiên phong nghiên cứu và ứng dụng các xu hướng công nghệ mới nhất, FPT sẽ tiếp tục là đơn vị dẫn dắt và chuyển đổi số cho Khách hàng, đưa các công nghệ mới như AI, Big Data, IoT,… vào các giải pháp trong mọi lĩnh vực như giao thông thông minh, y tế thông minh, chính phủ số, …
+    </p>
+  </div>
+</section>
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- Start Footer  -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="footer-top-box">
+                     <h3>Giờ mở cửa</h3>
+                     <ul class="list-time">
+                        <li>Thứ 2 - Thứ 7: Cả ngày</li>  
+                        <li>Chủ nhật: Cả ngày</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="footer-top-box">
+                 <h3>Đăng ký ngay</h3>
+                 <strong><h4 style="color: #ffff">0353 264 243</h4></strong>
+
+                 <!-- <div class="formRegister">
+                    <form id="registerForm">
+
+                      <label for="service">Loại dịch vụ</label>
+                      <select name="service" id="service" required>
+                        <option value="">-- Chọn dịch vụ --</option>
+                        <option value="Internet cá nhân">Internet cá nhân</option>
+                        <option value="Internet cá nhân">Internet gia đình</option>
+                        <option value="Internet cá nhân">Internet doanh nghiệp</option>
+                        <option value="Camera">Camera FPT</option>
+                        <option value="Combo Internet & Camera">Combo Internet & Camera</option>
+                    </select>
+
+                    <label for="name">Họ và tên</label>
+                    <input type="text" name="name" id="name" placeholder="Nguyễn Văn A" required>
+
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" name="phone" id="phone" placeholder="09xx xxx xxx" required>
+
+                    <label for="address">Địa chỉ lắp đặt</label>
+                    <textarea name="address" id="address" rows="3" placeholder="Ví dụ: 123 Lê Lợi, Quận 1, TP.HCM" required></textarea>
+
+                    <button type="submit">Gửi đăng ký</button>
+                </form>
+                <div id="result"></div>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12">
+      <div class="footer-top-box">
+         <h3>Kênh thông tin</h3>
+         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+         <ul>
+            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="footer-widget">
+            <p>Giấy chứng nhận ĐKDN số 0101778163 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp  ngày 28/07/2005<p>
+                <p>Giấy phép cung cấp dịch vụ viễn thông số 255/GP-CVT do Cục Viễn Thông cấp ngày 07/11/2022</p>
+                <p>Người đại diện: Ông Hoàng Việt Anh</p>                   
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-link">
+                <h4>Về chúng tôi</h4>
+                <ul>
+                    <li> <a href="#">Giới thiệu chung</a></li>
+                    <li><a href="#">Liên kết và thành viên</a></li>
+                    <li><a href="#">Khách hàng & Đối tác</a></li>
+                    <li><a href="#">Quan hệ cổ đông</a></li>
+                    <li><a href="#">Tập đoàn FPT</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-link-contact">
+                <h4>Công ty Cổ Phần FPT Telecom</h4>
+                <ul>
+                    <li>
+                        <p><i class="fas fa-map-marker-alt"></i>Địa chỉ:Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10 Phạm Văn Bạch, quận Cầu Giấy, TP. Hà Nội </p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-phone-square"></i>Điện thoại: 024 7300 2222 <a href="tel:+1-888705770"></a></p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">hotrokhachhang@fpt.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+<!-- End Footer  -->
+
+<!-- Start copyright  -->
+<div class="footer-copyright">
+    <p class="footer-company">Trực thuộc FPT Telecom &copy;<a href="#"></a> Design By :
+        <a href="#">Minh Quang FPT &copy; 035.326.4243</a></p>
+    </div>
+    <!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none; margin-top: 20 px">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
