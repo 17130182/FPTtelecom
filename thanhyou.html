@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>FPT Telecom</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+    <!--  <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+<!-- Thêm CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <style>
+            ul, li {
+              list-style: none;
+          }
+          body {
+           body {
+              font-family: 'Roboto', 'Arial', sans-serif;
+          }
+              /*font-family: 'Roboto', sans-serif;
+              background-color: #f2f2f2;
+              margin: 0;
+              padding: 0;
+*/
+      }
+
+
+
+      .form-container {
+          background: #fff;
+          max-width: 500px;
+          margin: 60px auto;
+          padding: 30px 40px;
+          border-radius: 12px;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+          text-align: center;
+          color: #e74c3c;
+          margin-bottom: 25px;
+      }
+
+      label {
+          font-weight: 600;
+          display: block;
+          margin: 12px 0 6px;
+          color: #FFFFFF;
+      }
+
+      input, select, textarea {
+          width: 100%;
+          padding: 10px 12px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          font-size: 15px;
+          transition: border-color 0.3s ease;
+      }
+
+      input:focus, select:focus, textarea:focus {
+          border-color: #e67e22;
+          outline: none;
+      }
+
+      button {
+          width: 100%;
+          padding: 12px;
+          background: #e74c3c;
+          border: none;
+          border-radius: 8px;
+          color: #fff;
+          font-size: 16px;
+          font-weight: bold;
+          margin-top: 20px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+      }
+
+      button:hover {
+          background: #c0392b;
+      }
+
+      #result {
+          margin-top: 15px;
+          text-align: center;
+          color: green;
+          font-weight: 600;
+      }
+
+      @media (max-width: 600px) {
+          .form-container {
+            margin: 30px 15px;
+            padding: 20px;
+        }
+    }
+    list-unstyled{
+        font-size: 20px;
+        .pa
+    }
+    .package-card ul li {
+        font-size: 13px;           /* giảm từ ~15px còn 13px */
+        line-height: 1.5;          /* khoảng cách dòng vừa phải */
+        margin-bottom: 4px;
+    }
+    .package-card .btn {
+        font-size: 14px;           /* nút đăng ký giữ rõ ràng */
+        font-weight: bold;
+    }
+
+/*MENU*/
+
+/* Giảm cỡ chữ và padding của menu chính */
+.navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 10px 12px;
+}
+
+/* Giảm chiều cao navbar */
+.navbar {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+/* Logo nhỏ hơn */
+.navbar-brand img.logo {
+    height: 36px;
+}
+
+/* Menu con cũng nhỏ lại */
+.dropdown-menu li a {
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+.card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+.card {
+  border-radius: 20px; /* tuỳ bo nhiều ít */
+  overflow: hidden; /* quan trọng */
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.navbar .hotline {
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .navbar .hotline {
+      position: static;
+      transform: none;
+      margin: 10px 0;
+  }
+ background-color: #f8f9fa;
+    }
+    .thankyou-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .thankyou-box {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+    .thankyou-box h1 {
+      color: #ff6600;
+      margin-bottom: 20px;
+    }
+    .thankyou-box p {
+      color: #333;
+      font-size: 16px;
+    }
+    .btn-home {
+      margin-top: 24px;
+      background-color: #ff6600;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .btn-home:hover {
+      background-color: #e55d00;
+    }
+</style>
+
+</head>
+
+<body>
+    <!-- Start Main Top -->
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                    <div class="right-phone-box">
+                        <p>Gọi ngay: <a href="#">035 326 4243</a></p>
+                    </div>
+                    <div class="our-link">
+                        <ul>
+                            <!-- <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li> -->
+                            <li><a href="#"><i class="fas fa-location-arrow"></i>Toàn quốc</a></li>
+                            <li><a href="tuvanlapdat.html"><i class="fas fa-headset"></i>Tư vấn ngay</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                    <div class="text-slid-box" style="padding-left: 100px;">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li>
+                                    <i class="fas fa-headset"></i> Tư vấn miễn phí
+                                </li>
+                                <li>
+                                    <i class="fas fa-gear"></i> Miễn phí thiết bị
+                                </li>
+                                <li>
+                                    <i class="fas fa-infinity"></i> Hỗ trợ 24/7 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                    <h1>
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- Số điện thoại ở giữa -->
+                    <div class="hotline text-center mx-auto">
+                        <span class="fw-bold"><strong>Hotline/Zalo: 0353 264 243 - Minh Quang FPT</strong></span>
+                    </div>
+
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Trang chủ</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Sản phẩm dịch vụ</a>
+                                <ul style="list-style: none;" class="dropdown-menu">
+                                    <li><a href="internetcapquang_canhan.html">Internet cáp quang</a></li>
+                                    <li><a href="truyenhinhFPTplay.html">Truyền hình & Giải trí</a></li>
+                                    <li><a href="camera.html">Camera FPT</a></li>
+                                    <li><a href="smarthome.html">FPT Smart Home</a></li>
+                                    <li><a href="#">Dịch vụ tiện ích</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="sale.html">Ưu đãi</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Hỗ trợ</a>
+                                <ul style="list-style: none;" class="dropdown-menu">
+                                    <li><a href="#">Hỗ trợ thông tin</a></li>
+                                    <li><a href="#">Hỗ trợ kĩ thuật</a></li>
+
+
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="contact-us.html">Hỗ trợ</a></li> -->
+                            <li class="nav-item"><a class="nav-link" href="about.html">Về chúng tôi</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+
+                    <!-- Start Atribute Navigation -->
+               <!--  <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li class="side-menu">
+							<a href="#">
+								<i class="fa fa-shopping-bag"></i>
+								<span class="badge">3</span>
+								<p>My Cart</p>
+							</a>
+						</li>
+                    </ul>
+                </div> -->
+                <!-- End Atribute Navigation -->
+            </div>
+            <!-- Start Side Menu -->
+            <!-- <div class="side">
+                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                <li class="cart-box">
+                    <ul class="cart-list">
+                        <li>
+                            <a href="#" class="photo"><img src="images/img-pro-01.jpg" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Delica omtantur </a></h6>
+                            <p>1x - <span class="price">$80.00</span></p>
+                        </li>
+                        <li>
+                            <a href="#" class="photo"><img src="images/img-pro-02.jpg" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Omnes ocurreret</a></h6>
+                            <p>1x - <span class="price">$60.00</span></p>
+                        </li>
+                        <li>
+                            <a href="#" class="photo"><img src="images/img-pro-03.jpg" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">Agam facilisis</a></h6>
+                            <p>1x - <span class="price">$40.00</span></p>
+                        </li>
+                        <li class="total">
+                            <a href="#" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
+                            <span class="float-right"><strong>Total</strong>: $180.00</span>
+                        </li>
+                    </ul>
+                </li>
+            </div> -->
+            <!-- End Side Menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+   
+   
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+  <div class="thankyou-wrapper">
+    <div class="thankyou-box">
+      <h1>🎉 Cảm ơn bạn!</h1>
+      <p>Thông tin đăng ký của bạn đã được gửi thành công.<br>Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.</p>
+      <a href="https://fptwifi6camera.shop" class="btn btn-home">Quay lại trang chủ</a>
+    </div>
+  </div>
+
+
+
+<!-- Start Footer  -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+             <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="footer-top-box">
+               <h3>Giờ mở cửa</h3>
+               <ul class="list-time">
+                <li>Thứ 2 - Thứ 7: Cả ngày</li>  
+                <li>Chủ nhật: Cả ngày</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12">
+      <div class="footer-top-box">
+       <h3>Đăng ký ngay</h3>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12">
+  <div class="footer-top-box">
+   <h3>Kênh thông tin</h3>
+   <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+   <ul>
+    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="footer-widget">
+            <p>Giấy chứng nhận ĐKDN số 0101778163 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp  ngày 28/07/2005<p>
+                <p>Giấy phép cung cấp dịch vụ viễn thông số 255/GP-CVT do Cục Viễn Thông cấp ngày 07/11/2022</p>
+                <p>Người đại diện: Ông Hoàng Việt Anh</p>                   
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-link">
+                <h4>Về chúng tôi</h4>
+                <ul>
+                    <li> <a href="#">Giới thiệu chung</a></li>
+                    <li><a href="#">Liên kết và thành viên</a></li>
+                    <li><a href="#">Khách hàng & Đối tác</a></li>
+                    <li><a href="#">Quan hệ cổ đông</a></li>
+                    <li><a href="#">Tập đoàn FPT</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="footer-link-contact">
+                <h4>Công ty Cổ Phần FPT Telecom</h4>
+                <ul>
+                    <li>
+                        <p><i class="fas fa-map-marker-alt"></i>Địa chỉ:Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10 Phạm Văn Bạch, quận Cầu Giấy, TP. Hà Nội </p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-phone-square"></i>Điện thoại: 024 7300 2222 <a href="tel:+1-888705770"></a></p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">hotrokhachhang@fpt.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+<!-- End Footer  -->
+
+<!-- Start copyright  -->
+<div class="footer-copyright">
+    <p class="footer-company">Trực thuộc FPT Telecom &copy;<a href="#"></a> Design By :
+        <a href="#">Minh Quang FPT &copy; 035.326.4243</a></p>
+    </div>
+    <!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none; margin-top: 20 px">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
