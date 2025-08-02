@@ -758,29 +758,39 @@
                  <h3>Đăng ký ngay</h3>
 
                  <div class="formRegister">
-                    <form id="registerForm">
+                    <form action="https://formsubmit.co/tranminhquang0299@gmail.com" method="POST" autocomplete="off">
 
-                      <label for="service">Loại dịch vụ</label>
-                      <select name="service" id="service" required>
-                        <option value="">-- Chọn dịch vụ --</option>
-                        <option value="Internet cá nhân">Internet cá nhân</option>
-                        <option value="Internet cá nhân">Internet gia đình</option>
-                        <option value="Internet cá nhân">Internet doanh nghiệp</option>
-                        <option value="Camera">Camera FPT</option>
-                        <option value="Combo Internet & Camera">Combo Internet & Camera</option>
-                    </select>
+        <!-- Chọn dịch vụ -->
+        <label for="service">Loại dịch vụ</label>
+        <select name="Dịch vụ" id="service" required>
+          <option value="">-- Chọn dịch vụ --</option>
+          <option value="Internet cá nhân">Internet cá nhân</option>
+          <option value="Internet gia đình">Internet gia đình</option>
+          <option value="Internet doanh nghiệp">Internet doanh nghiệp</option>
+          <option value="Camera FPT">Camera FPT</option>
+          <option value="Combo Internet & Camera">Combo Internet & Camera</option>
+        </select>
 
-                    <label for="name">Họ và tên</label>
-                    <input type="text" name="name" id="name" placeholder="Nguyễn Văn A" required>
+        <!-- Họ và tên -->
+        <label for="name">Họ và tên</label>
+        <input type="text" name="Họ và tên" id="name" placeholder="Nguyễn Văn A" required>
 
-                    <label for="phone">Số điện thoại</label>
-                    <input type="tel" name="phone" id="phone" placeholder="09xx xxx xxx" required>
+        <!-- Số điện thoại -->
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" name="Số điện thoại" id="phone" placeholder="09xx xxx xxx" required>
 
-                    <label for="address">Địa chỉ lắp đặt</label>
-                    <textarea name="address" id="address" rows="3" placeholder="Ví dụ: 123 Lê Lợi, Quận 1, TP.HCM" required></textarea>
+        <!-- Địa chỉ lắp đặt -->
+        <label for="address">Địa chỉ lắp đặt</label>
+        <textarea name="Địa chỉ lắp đặt" id="address" rows="3" placeholder="123 Lê Lợi, Quận 1, TP.HCM" required></textarea>
 
-                    <button type="submit">Gửi đăng ký</button>
-                </form>
+        <!-- Tùy chọn FormSubmit -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://fptwifi6camera.shop/thank-you.html">
+
+        <!-- Nút gửi -->
+        <button type="submit">Gửi đăng ký</button>
+      </form>
+
                 <div id="result"></div>
             </div>
 
