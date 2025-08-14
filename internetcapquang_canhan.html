@@ -656,21 +656,22 @@ list-unstyled{
 
 
 <div class="container my-5">
-  <h2 class="fw-bold mb-4">Bảng giá cước Internet FPT là bao nhiêu ?</h2>
+  <h2 class="fw-bold mb-2">Bảng giá cước Internet FPT là bao nhiêu?</h2>
+  <p class="text-muted mb-4">Cập nhật bảng giá Internet FPT mới nhất 2025, gồm gói Cá nhân, Combo FPT Play, Game thủ và Doanh nghiệp, đầy đủ thiết bị kèm theo.</p>
 
   <!-- Nav Tabs -->
   <ul class="nav nav-tabs mb-3" id="priceTabs" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="internet-tab" data-bs-toggle="tab" data-bs-target="#internet" type="button" role="tab">Internet Cá Nhân</button>
+      <button class="nav-link active" id="internet-tab" data-bs-toggle="tab" data-bs-target="#internet" type="button" role="tab"><i class="fa-solid fa-house-signal"></i> Internet Cá Nhân</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="combo-tab" data-bs-toggle="tab" data-bs-target="#combo" type="button" role="tab">Combo FPT Play</button>
+      <button class="nav-link" id="combo-tab" data-bs-toggle="tab" data-bs-target="#combo" type="button" role="tab"><i class="fa-solid fa-tv"></i> Combo FPT Play</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="game-tab" data-bs-toggle="tab" data-bs-target="#game" type="button" role="tab">Game Thủ / Streamer</button>
+      <button class="nav-link" id="game-tab" data-bs-toggle="tab" data-bs-target="#game" type="button" role="tab"><i class="fa-solid fa-gamepad"></i> Game Thủ / Streamer</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business" type="button" role="tab">Doanh Nghiệp</button>
+      <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business" type="button" role="tab"><i class="fa-solid fa-building"></i> Doanh Nghiệp</button>
     </li>
   </ul>
 
@@ -679,94 +680,207 @@ list-unstyled{
     <!-- Internet Cá Nhân -->
     <div class="tab-pane fade show active" id="internet" role="tabpanel">
       <div class="table-responsive">
-        <table class="table table-bordered text-center align-middle">
+        <table class="table table-bordered table-hover text-center align-middle">
           <thead class="table-light fw-bold">
             <tr>
-              <th>Gói cước</th>
-              <th>Giá cước</th>
-              <th>Đăng ký</th>
-              <th>Thiết bị, dịch vụ đi kèm</th>
+              <th><i class="fa-solid fa-wifi"></i> Gói cước</th>
+              <th><i class="fa-solid fa-tag"></i> Giá cước</th>
+              <th><i class="fa-solid fa-hand-pointer"></i> Đăng ký</th>
+              <th><i class="fa-solid fa-box"></i> Thiết bị, dịch vụ đi kèm</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td class="fw-bold">Giga (300Mb)</td><td class="fw-bold">180,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wi-Fi 6</td></tr>
-            <tr><td class="fw-bold">Sky (1Gb - 300Mb)</td><td class="fw-bold">195,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wi-Fi 6</td></tr>
-            <tr><td class="fw-bold">Giga F1 (300Mb)</td><td class="fw-bold">200,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wi-Fi 6, Access Point</td></tr>
-            <tr><td class="fw-bold">Sky F1 (1Gb - 300Mb)</td><td class="fw-bold">215,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wi-Fi 6, Access Point</td></tr>
-            <tr><td class="fw-bold">Giga F2 (300Mb)</td><td class="fw-bold">220,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wi-Fi 6, 2 Access Point</td></tr>
-            <tr><td class="fw-bold">Sky F2 (1Gb - 300Mb)</td><td class="fw-bold">230,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wi-Fi 6, 2 Access Point</td></tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Giga (300Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">180,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wi-Fi 6</td>
+            </tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Sky (1Gb - 300Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">195,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wi-Fi 6</td>
+            </tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Giga F1 (300Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">200,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wi-Fi 6, Access Point</td>
+            </tr>
+
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Sky F1 (1Gb - 300Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">215,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wi-Fi 6, Access Point</td>
+            </tr>
+
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Giga F2 (300Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">220,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wi-Fi 6, 2 Access Point</td>
+            </tr>
+
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Sky F2 (1Gb - 300Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">230,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wi-Fi 6, 2 Access Point</td>
+            </tr>
+
+            <!-- Các hàng khác giữ nguyên, chỉ cần thêm data-label tương tự -->
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- Combo FPT Play -->
-    <div class="tab-pane fade" id="combo" role="tabpanel">
+
+      <!-- Combo FPT Play -->
+    <div class="tab-pane fade show" id="combo" role="tabpanel">
       <div class="table-responsive">
-        <table class="table table-bordered text-center align-middle">
+        <table class="table table-bordered table-hover text-center align-middle">
           <thead class="table-light fw-bold">
             <tr>
-              <th>Gói cước</th>
-              <th>Giá cước</th>
-              <th>Đăng ký</th>
-              <th>Thiết bị, dịch vụ đi kèm</th>
+              <th><i class="fa-solid fa-wifi"></i> Gói cước</th>
+              <th><i class="fa-solid fa-tag"></i> Giá cước</th>
+              <th><i class="fa-solid fa-hand-pointer"></i> Đăng ký</th>
+              <th><i class="fa-solid fa-box"></i> Thiết bị, dịch vụ đi kèm</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td class="fw-bold">Combo Giải trí (300Mb)</td><td class="fw-bold">200,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wi-Fi 6, FPT Play Box</td></tr>
-            <tr><td class="fw-bold">Combo Truyền hình (300Mb)</td><td class="fw-bold">230,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wi-Fi 6, FPT Play Box</td></tr>
-            <tr><td class="fw-bold">Combo Giga F1 (300Mb)</td><td class="fw-bold">230,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wi-Fi 6, FPT Play Box</td></tr>
-            <tr><td class="fw-bold">Combo Sky F1 (1Gb - 300Mb)</td><td class="fw-bold">245,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wi-Fi 6, FPT Play Box</td></tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Combo Giải trí (300Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">200,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wi-Fi 6, FPT Play Box</td>
+            </tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Combo Truyền hình (300Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">230,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wi-Fi 6, FPT Play Box</td>
+            </tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Combo Giga F1 (300Mb)   </td>
+              <td data-label="Giá cước" class="fw-bold">250,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wi-Fi 6, FPT Play Box</td>
+            </tr>
+
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Combo Sky F1 (1Gb - 300Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">255,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wi-Fi 6, FPT Play Box</td>
+            </tr>
+
+            <!-- Các hàng khác giữ nguyên, chỉ cần thêm data-label tương tự -->
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- Game Thủ -->
-    <div class="tab-pane fade" id="game" role="tabpanel">
+
+  <!-- Game thủ/ Streamer -->
+    <div class="tab-pane fade show" id="game" role="tabpanel">
       <div class="table-responsive">
-        <table class="table table-bordered text-center align-middle">
+        <table class="table table-bordered table-hover text-center align-middle">
           <thead class="table-light fw-bold">
             <tr>
-              <th>Gói cước</th>
-              <th>Giá cước</th>
-              <th>Đăng ký</th>
-              <th>Thiết bị, dịch vụ đi kèm</th>
+              <th><i class="fa-solid fa-wifi"></i> Gói cước</th>
+              <th><i class="fa-solid fa-tag"></i> Giá cước</th>
+              <th><i class="fa-solid fa-hand-pointer"></i> Đăng ký</th>
+              <th><i class="fa-solid fa-box"></i> Thiết bị, dịch vụ đi kèm</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td class="fw-bold">Gói F-Game (1Gb - 300Mb)</td><td class="fw-bold">230,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wifi 6, Ultra Fast giảm ping</td></tr>
-            <tr><td class="fw-bold">Combo F-Game (1Gb - 300Mb)</td><td class="fw-bold">275,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wi-Fi 6, FPT Play Box 130 kênh, Ultra Fast giảm ping</td></tr>
-            <tr><td class="fw-bold">Gói F-Game F1</td><td class="fw-bold">250,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wifi 6, Access Point, Ultra Fast giảm ping</td></tr>
-            <tr><td class="fw-bold">Combo F-Game F1 (1Gb - 300Mb)</td><td class="fw-bold">290,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wifi 6, Access Point, FPT Play Box 130 kênh, Ultra Fast giảm ping</td></tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Gói F-Game (1Gb - 300Mb)    </td>
+              <td data-label="Giá cước" class="fw-bold">230,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wifi 6, Ultra Fast giảm ping</td>
+            </tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Combo F-Game (1Gb - 300Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">275,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wi-Fi 6, FPT Play Box 130 kênh, Ultra Fast giảm ping</td>
+            </tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Gói F-Game F1 </td>
+              <td data-label="Giá cước" class="fw-bold">250,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wifi 6, Access Point, Ultra Fast giảm ping</td>
+            </tr>
+
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Combo F-Game F1 (1Gb - 300Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">290,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wifi 6, Access Point, FPT Play Box 130 kênh, Ultra Fast giảm ping</td>
+            </tr>
+
+            <!-- Các hàng khác giữ nguyên, chỉ cần thêm data-label tương tự -->
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- Doanh Nghiệp -->
-    <div class="tab-pane fade" id="business" role="tabpanel">
+
+      <!--Doanh nghiệp -->
+    <div class="tab-pane fade show" id="business" role="tabpanel">
       <div class="table-responsive">
-        <table class="table table-bordered text-center align-middle">
+        <table class="table table-bordered table-hover text-center align-middle">
           <thead class="table-light fw-bold">
             <tr>
-              <th>Gói cước</th>
-              <th>Giá cước</th>
-              <th>Đăng ký</th>
-              <th>Thiết bị, dịch vụ đi kèm</th>
+              <th><i class="fa-solid fa-wifi"></i> Gói cước</th>
+              <th><i class="fa-solid fa-tag"></i> Giá cước</th>
+              <th><i class="fa-solid fa-hand-pointer"></i> Đăng ký</th>
+              <th><i class="fa-solid fa-box"></i> Thiết bị, dịch vụ đi kèm</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td class="fw-bold">Super250 (250Mb - 250Mb)</td><td class="fw-bold">545,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Mikrotik RB760iGS (hoặc tương đương)</td></tr>
-            <tr><td class="fw-bold">Lux500 (500Mb - 500Mb)</td><td class="fw-bold">800,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wifi 6, Access Point Wifi 6, Tích hợp Ultra Fast</td></tr>
-            <tr><td class="fw-bold">Lux800 (800Mb - 800Mb)</td><td class="fw-bold">1,000,000 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wifi 6, Access Point Wifi 6, Tích hợp Ultra Fast</td></tr>
-            <tr><td class="fw-bold">Combo Lux500 (500Mb - 500Mb)</td><td class="fw-bold">875,600 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wifi 6, Access Point Wifi 6, Tích hợp Ultra Fast, FPT Play Box</td></tr>
-            <tr><td class="fw-bold">Combo Lux800 (800Mb - 800Mb)</td><td class="fw-bold">1,075,600 ₫</td><td><a href="#" class="btn btn-primary btn-sm">Đăng ký</a></td><td class="fw-bold">Modem Wifi 6, Access Point Wifi 6, Tích hợp Ultra Fast, FPT Play Box</td></tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Super250 (250Mb - 250Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">545,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Mikrotik RB760iGS (hoặc tương đương)</td>
+            </tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Lux500 (500Mb - 500Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">800,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wifi 6, Access Point Wifi 6, Tích hợp Ultra Fast</td>
+            </tr>
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Lux800 (800Mb - 800Mb) </td>
+              <td data-label="Giá cước" class="fw-bold">1,000,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wifi 6, Access Point Wifi 6, Tích hợp Ultra Fast</td>
+            </tr>
+
+            <tr>
+              <td data-label="Gói cước" class="fw-bold">Combo Lux500 (500Mb - 500Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">875,000 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wifi 6, Access Point Wifi 6, Tích hợp Ultra Fast, FPT Play Box</td>
+            </tr>
+
+             <tr>
+              <td data-label="Gói cước" class="fw-bold">Combo Lux800 (800Mb - 800Mb)</td>
+              <td data-label="Giá cước" class="fw-bold">1,075,600 ₫</td>
+              <td data-label="Đăng ký"><a href="tuvanlapdat.html" class="btn btn-register btn-sm">Đăng ký</a></td>
+              <td data-label="Thiết bị" class="fw-bold">Modem Wifi 6, Access Point Wifi 6, Tích hợp Ultra Fast, FPT Play Box</td>
+            </tr>
+
+            <!-- Các hàng khác giữ nguyên, chỉ cần thêm data-label tương tự -->
           </tbody>
         </table>
       </div>
     </div>
-
+    <!-- Các tab khác (combo, game, business) cũng giữ nguyên cấu trúc và thêm data-label tương tự -->
   </div>
 </div>
 
