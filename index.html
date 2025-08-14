@@ -190,7 +190,33 @@
       transform: none;
       margin: 10px 0;
   }
+/* Slider cơ bản */
+#slides-shop img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
 
+/* Giảm kích thước slider trên mobile */
+@media (max-width: 768px) {
+  #slides-shop {
+    max-height: 250px;
+    overflow: hidden;
+  }
+  #slides-shop img {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  #slides-shop {
+    max-height: 200px;
+  }
+  #slides-shop img {
+    max-height: 200px;
+  }
+}
 </style>
 
 </head>
