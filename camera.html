@@ -268,6 +268,22 @@
     font-size: 13px;
     padding: 6px 10px;
 }
+.banner {
+    margin-bottom: 15px; /* Khoảng cách giữa các banner */
+}
+
+.banner-img {
+    height: auto; /* Giữ tỉ lệ gốc */
+}
+
+/* Trên điện thoại: thu nhỏ toàn ảnh */
+@media (max-width: 576px) {
+    .banner-img {
+        max-height: 250px; /* Giới hạn chiều cao */
+        width: 100%;
+        height: auto;
+    }
+}
 
 </style>
 
@@ -518,14 +534,14 @@
 </div>
 
 <!-- Banner -->
-<div class="banner" >
- <img  src="images/camera/tech2.PNG" alt="Tech 2 Camera FPT">
+<!-- Banner -->
+<div class="banner">
+    <img src="images/camera/tech2.png" alt="Tech 2 Camera FPT" class="img-fluid w-100 banner-img">
 </div>
 
-<div class="banner" >
- <img  src="images/camera/tech.PNG" alt="Tech Camera FPT">
+<div class="banner">
+    <img src="images/camera/tech.png" alt="Tech Camera FPT" class="img-fluid w-100 banner-img">
 </div>
-
 
 <!-- Start Footer  -->
 <footer>
